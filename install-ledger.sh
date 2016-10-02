@@ -23,6 +23,6 @@ curl -sL https://github.com/ledger/ledger/archive/master.tar.gz | tar xz
 cd ledger-master
 
 cmake .
-make
+make -j2
 
 
