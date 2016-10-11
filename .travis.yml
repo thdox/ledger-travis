@@ -2,5 +2,13 @@ sudo: required
 
 language: generic
 
+os:
+    - linux
+    - osx
+
 before_install:
   - ./install-ledger.sh
+  - export PATH=$TRAVIS_BUILD_DIR/ledger-master:$PATH
+
+script:
+  - ledger --version
